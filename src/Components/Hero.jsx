@@ -6,7 +6,7 @@ import img from '../../src/assets/junayed.png'
 
 
 const Hero = () => {
-  const texts = ['Full Stack Developer', 'UI/UX Enthusiast', 'Problem Solver', 'Code Craftsman'];
+  const texts = ['Full Stack Developer', 'UI/UX Enthusiast', 'React Developer', 'Code Craftsman'];
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
