@@ -16,7 +16,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className='flex justify-between items-center md:px-24 px-6 bg-black/90  py-4 '>
+    <nav className='flex justify-between items-center md:px-24 px-6 bg-black  py-4 '>
       <div className='flex items-center gap-2'> 
         <FaCode size={28} className='text-rose-500'></FaCode>
         <h3 className='md:text-2xl text-xl font-bold text-rose-500'> Junayed Khan</h3>
@@ -46,7 +46,7 @@ const Navbar = () => {
         >
           <div className='flex justify-between items-center p-4 border-b'>
             <h2 className='text-lg font-semibold text-white'>Menu</h2>
-            <button onClick={() => setOpen(false)} className='text-rose-600'>
+            <button onClick={() => setOpen(false)} className='text-white'>
               <X size={22} />
             </button>
           </div>

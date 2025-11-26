@@ -49,7 +49,7 @@ const Hero = () => {
             <h1 className="text-3xl sm:text-4xl text-left lg:text-5xl xl:text-6xl font-bold text-gray-700  mb-4 lg:mb-6">
               I'm <span className="text-rose-500 ">Junayed Khan</span>
             </h1>
-           <div className="text-xl sm:text-2xl text-left lg:text-3xl text-gray-600 dark:text-gray-300 mb-6 lg:mb-8">
+           <div className="text-xl sm:text-2xl text-left lg:text-3xl text-gray-300 dark:text-gray-300 mb-6 lg:mb-8">
              <span className="typing-animation">{displayText}&nbsp;</span>
           </div>
             <p className="text-base md:text-left lg:text-lg text-gray-600  mb-6 lg:mb-8 leading-relaxed">
