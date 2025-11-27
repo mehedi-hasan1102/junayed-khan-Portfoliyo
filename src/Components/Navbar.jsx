@@ -9,9 +9,9 @@ const Navbar = () => {
   const links = (
     <>
       <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">Home</NavLink></li>
-      <li><NavLink to="/about" className="text-white hover:text-rose-600 transition m-2">About</NavLink></li>
-      <li><NavLink to="/contact" className="text-white hover:text-rose-600 transition m-2">Contact</NavLink></li>
-      <li><NavLink to="/myProfile" className="text-white hover:text-rose-600 transition m-2">My Profile</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">About</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">Contact</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">My Profile</NavLink></li>
     </>
   );
 
