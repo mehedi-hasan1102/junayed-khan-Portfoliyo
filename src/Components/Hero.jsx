@@ -44,7 +44,7 @@ const Hero = () => {
       id="home"
       className="min-h-full bg-black/100  pt-"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:pb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:pb-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="fade-in order-2 lg:order-1 text-center">
             <h1 className="text-3xl sm:text-4xl text-left lg:text-5xl xl:text-6xl font-bold text-gray-700  mb-4 lg:mb-6">
@@ -56,7 +56,7 @@ const Hero = () => {
             <p className="text-base md:text-left lg:text-lg text-gray-600  mb-6 lg:mb-6 leading-relaxed">
               I create beautiful and functional web experiences. Clean design and excellent user experience are the core focus of my work.
             </p>
-            <div className="mb-4">
+            <div className="mb-4 ">
               <SocialMedia></SocialMedia>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -77,7 +77,7 @@ const Hero = () => {
           <div className="fade-in order-1 lg:order-2">
             <div className="relative">
                 <img src="" alt="" />
-              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto  rounded-full flex items-center justify-center shadow-2xl ">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto border-rose-600 border rounded-full flex items-center justify-center shadow-2xl ">
                 <img src={img} alt="img" className="rounded-2xl" />
               </div>
               <div className="absolute -top-2 -right-2 lg:-top-4 lg:-right-4 w-16 h-16 lg:w-24 lg:h-24 bg-rose-300 rounded-full opacity-20 animate-pulse"></div>
