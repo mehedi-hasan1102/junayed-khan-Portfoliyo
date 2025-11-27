@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import animate from '../../src/assets/Developer (1).json'
 import Lottie from "lottie-react";
-
+import MySkill from "./MySkill";
 const About = () => {
   return (
     <section className="min-h-screen bg-black flex items-center justify-center py-20 px-6">
@@ -44,53 +44,21 @@ const About = () => {
             <span className="text-rose-600 font-semibold">Full Stack Developer</span> 
               dedicated to crafting elegant and high-performing digital experiences.
           </p>
-          <p className="text-gray-600 leading-relaxed mb-8">
+          <p className="text-gray-600 leading-relaxed mb-2">
             My goal is to build solutions that are not just functional but delightful.
             I enjoy transforming complex ideas into intuitive interfaces and efficient systems.
           </p>
 
-          {/* Animated Skill Bars */}
-          <div className="space-y-5 mb-10">
-            {[
-              { name: "React.js", level: 90 },
-              { name: "Tailwind CSS", level: 85 },
-              { name: "Node.js", level: 75 },
-              { name: "UI/UX Design", level: 80 },
-            ].map((skill, i) => (
-              <div key={i}>
-                <div className="flex justify-between text-sm font-medium text-gray-700 mb-1">
-                  <span>{skill.name}</span>
-                  <span>{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1.2, delay: i * 0.2 }}
-                    viewport={{ once: true }}
-                    className="h-2.5 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full"
-                  ></motion.div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-600 leading-relaxed mb-">
+            I specialize in React.js, with hands-on experience in Next.js, Node.js MongoDB, and modern full-stack development tools. I love creating clean designs, smooth user experiences, and scalable web applications.
+          </p>
 
-          {/* Buttons */}
-          <div className="flex gap-4">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              href="#projects"
-              className="px-6 py-3 bg-gradient-to-r from-rose-700 to-rose-500 text-white rounded-lg shadow-md hover:shadow-lg transition-all"
-            >
-              View My Work
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              href="#contact"
-              className="px-6 py-3 border border-rose-500 text-rose-600 rounded-lg hover:bg-indigo-50 transition-all"
-            >
-              Contact Me
-            </motion.a>
+        
+          
+
+          {/* Marquee */}
+          <div className="w-11/12">
+            <MySkill></MySkill>
           </div>
         </motion.div>
       </motion.div>

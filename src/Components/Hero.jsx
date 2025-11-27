@@ -1,19 +1,20 @@
 // Hero.jsx
 import { useState, useEffect } from "react";
 import img from '../../src/assets/junayed.png'
+import SocialMedia from "./SocialMedia";
 
 
 
 
 const Hero = () => {
-  const texts = ['Full Stack Developer', 'UI/UX Enthusiast', 'React Developer', 'Code Craftsman'];
+  const texts = ['Full Stack Web Developer', 'Front-End Developer', 'Mern Stack Developer', 'React Developer'];
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
-    let typeSpeed = isDeleting ? 50 : 100;
+    let typeSpeed = isDeleting ? 100 : 300;
 
     if (!isDeleting && charIndex === texts[textIndex].length) {
       typeSpeed = 2000; // Wait before deleting
@@ -41,21 +42,23 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-full bg-black/100  pt-10"
+      className="min-h-full bg-black/100  pt-"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:pb-12">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="fade-in order-2 lg:order-1">
+          <div className="fade-in order-2 lg:order-1 text-center">
             <h1 className="text-3xl sm:text-4xl text-left lg:text-5xl xl:text-6xl font-bold text-gray-700  mb-4 lg:mb-6">
               I'm <span className="text-rose-500 ">Junayed Khan</span>
             </h1>
            <div className="text-xl sm:text-2xl text-left lg:text-3xl text-gray-300 dark:text-gray-300 mb-6 lg:mb-8">
              <span className="typing-animation">{displayText}&nbsp;</span>
           </div>
-            <p className="text-base md:text-left lg:text-lg text-gray-600  mb-6 lg:mb-8 leading-relaxed">
-              I craft beautiful, functional web experiences that solve real problems. 
-              Passionate about clean code, user experience, and bringing ideas to life.
+            <p className="text-base md:text-left lg:text-lg text-gray-600  mb-6 lg:mb-6 leading-relaxed">
+              I create beautiful and functional web experiences. Clean design and excellent user experience are the core focus of my work.
             </p>
+            <div className="mb-4">
+              <SocialMedia></SocialMedia>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#projects"

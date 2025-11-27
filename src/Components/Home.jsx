@@ -14,9 +14,6 @@ const Home = () => {
              </header>
 
               <About></About>
-           
-
-
         </div>
     );
 };
