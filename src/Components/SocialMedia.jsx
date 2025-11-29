@@ -4,7 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const SocialMedia = () => {
     return (
-        <div className='flex gap-3 md:gap-5 items-center'>
+        <div className='flex gap-4 md:gap-5 items-center md:justify-start justify-center'>
             <div className='p-2 border border-gray-600 bg-black  rounded-full hover:animate-pulse'>
                 <FaGithub className='text-gray-600' size={24}></FaGithub>
             </div>

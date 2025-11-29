@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import figma from '../assets/figmaIcon.png'
 import {
   FaHtml5,
   FaCss3Alt,
@@ -23,14 +24,14 @@ const MySkill = () => {
     { icon: <SiExpress size={28} className="text-white" />, name: "Express.js" },
     { icon: <SiNextdotjs size={28} className="text-gray-200" />, name: "Next.js" },
     { icon: <SiMongodb pauseOnHover={true} size={32} className="text-green-500" />, name: "MongoDB" },
-    { icon: <IoLogoFigma size={28} className="text-white" />, name: "Figma" },
+    { icon: <img className=" size-7 text-center" src={figma}></img>, name: "Figma" },
 
   ];
 
   return (
-    <div className="bg-black py-10">
+    <div className="bg-black ">
       <Marquee speed={50} pauseOnHover={true} >
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-center ">
           {skills.map((skill, index) => (
             <div
               key={index}

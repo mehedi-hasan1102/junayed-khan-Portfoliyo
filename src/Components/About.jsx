@@ -6,7 +6,7 @@ import MySkill from "./MySkill";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-black flex items-center justify-center py-16 px-4 md:px-8">
+    <section className="min-h-screen bg-black flex items-center justify-center  px-4 md:px-8">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -59,14 +59,14 @@ const About = () => {
             efficient systems that deliver meaningful user experiences.
           </p>
 
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-2">
             Skilled in React.js, Next.js, Node.js, MongoDB, and modern
             full-stack engineering — creating scalable and beautifully crafted
             web applications.
           </p>
 
           {/* Skills Marquee */}
-          <div className="w-full md:w-10/12 mx-auto md:mx-0 mt-4">
+          <div className="w-10/12 md:w-11/12 mx-auto md:mx-0 mt-8 md:mt-4 ">
             <MySkill />
           </div>
         </motion.div>
