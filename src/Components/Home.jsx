@@ -16,7 +16,6 @@ const Home = () => {
              </header>
 
               <About></About>
-              <PortfolioSection></PortfolioSection>
               <Footer></Footer>
         </div>
     );

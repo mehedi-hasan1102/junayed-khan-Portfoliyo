@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaSquareInstagram, FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router';
 
 const SocialMedia = () => {
@@ -16,7 +16,7 @@ const SocialMedia = () => {
                 <FaXTwitter size={24}></FaXTwitter>
             </div>
             <div className='p-2 border border-gray-600 bg-black  rounded-full hover:animate-pulse text-gray-600 hover:bg-rose-500 hover:text-black hover:border-rose-500'>
-                <FaInstagram  size={24}></FaInstagram>
+                <FaSquareInstagram size={24}></FaSquareInstagram>
             </div>
             <div className='p-2 border border-gray-600 bg-black  hover:bg-rose-500 hover:border-rose-500 text-gray-600 hover:text-black rounded-full '>
                 <Link to="https://www.facebook.com/md.junayed.khan.162210"><FaFacebook size={24} ></FaFacebook></Link>
