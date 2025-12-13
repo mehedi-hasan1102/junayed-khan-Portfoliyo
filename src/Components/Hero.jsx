@@ -94,7 +94,7 @@ const Hero = () => {
             sm:w-72 sm:h-72
             md:w-80 md:h-80
             lg:w-96 lg:h-96
-            mx-auto border-rose-600 border rounded-2xl
+            mx-auto border-2 border-rose-600 border rounded-full
             flex items-center justify-center shadow-xl overflow-hidden
           ">
                 <img

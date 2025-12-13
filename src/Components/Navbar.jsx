@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { FaCode } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = () => { 
   const [open, setOpen] = useState(false);
 
   const links = (
