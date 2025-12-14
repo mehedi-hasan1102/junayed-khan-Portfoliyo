@@ -4,6 +4,7 @@ import { Link } from "react-router";
 const PortfolioCard = ({ image, title, category, views, links }) => {
   return (
     <div className="
+    
       relative card bg-[#1d1f25] shadow-xl rounded-2xl p-[2px]
       transition-all duration-500 cursor-pointer
       before:absolute before:inset-0 before:rounded-2xl 

@@ -4,19 +4,19 @@ import PortfolioCard from "./PortfolioCard";
 const PortfolioSection = () => {
   const portfolioData = [
     {
-      image: "https://i.ibb.co.com/9NqkRF4/mobile-dark.jpg",
+      image: "../../src/assets/Cat.JPG",
       title: "The services provide for design",
-      category: "UI/UX Design",
+      category: "Pets Shop",
       views: 501,
       links: [
-        { label: "Live Demo", url: "https://example.com/demo1" },
-        { label: "GitHub", url: "https://github.com/user/repo1" }
+        { label: "Live Demo", url: "https://junayed-khan24.github.io/assignment-3--0001/" },
+        { label: "GitHub", url: "https://github.com/junayed-khan24/assignment-3--0001" }
       ],
     },
     {
-      image: "https://i.ibb.co.com/4N6rJ2f/burger-app.jpg",
+      image: "../../src/assets/Capture.JPG",
       title: "Mobile app landing design & app maintain",
-      category: "App Design",
+      category: "Bangladesh 2.0",
       views: 780,
       links: [
         { label: "Live Demo", url: "https://junayed-khan24.github.io/Assingment-1/" },
@@ -24,13 +24,13 @@ const PortfolioSection = () => {
       ],
     },
     {
-      image: "https://i.ibb.co.com/CPrJMf7/logo-cards.jpg",
+      image: "../../src/assets/tee.JPG",
       title: "Logo design creativity & Application",
       category: "Branding",
       views: 320,
       links: [
-        { label: "Live Demo", url: "https://example.com/demo3" },
-        { label: "GitHub", url: "https://github.com/user/repo3" }
+        { label: "Live Demo", url: "https://junayed-khan24.github.io/tea-house-with-tailwind/" },
+        { label: "GitHub", url: "https://github.com/junayed-khan24/tea-house-with-tailwind" }
       ],
     },
     {
