@@ -72,7 +72,7 @@ const PortfolioSection = () => {
 
 
   return (
-    <div className="py-16 px-4 md:px-8 lg:px-20 bg-[#0f1115] min-h-screen">
+    <div id="portfolio" className="py-16 px-4 md:px-8 lg:px-20 bg-[#0f1115] min-h-screen">
       <div className="text-center mb-12">
         <p className="text-rose-500 tracking-wider mb-1 text-sm">
           ✦ A GLIMPSE INTO MY CREATIVE WORK SHOWCASE ✦
