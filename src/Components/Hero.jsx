@@ -42,7 +42,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
-    <section id="home" className="min-h-screen bg-black pt-10 md:pt-16">
+    <section id="home" className="min-h-screen bg-[#0f1115] pt-10 mt-6 md:pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* GRID — md responsive now fixed */}

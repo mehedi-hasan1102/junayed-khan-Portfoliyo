@@ -10,9 +10,8 @@ const Home = () => {
         <div className=''>
             <header className=''>
                 <Navbar></Navbar>
-                <div className=' '>
-                    <Hero></Hero>
-                </div>
+                <Hero></Hero>
+
             </header>
             <About></About>
             <PortfolioSection></PortfolioSection>

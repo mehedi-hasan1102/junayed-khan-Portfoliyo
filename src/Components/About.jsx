@@ -6,7 +6,7 @@ import MySkill from "./MySkill";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-black flex items-center justify-center  px-4 md:px-8">
+    <section className="min-h-screen bg-[#0f1115] flex items-center justify-center md:-mt-24 px-4 md:px-8">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center md:text-left"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-400 mb-4 leading-tight">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-rose-600">
               Me

@@ -29,7 +29,7 @@ const MySkill = () => {
   ];
 
   return (
-    <div className="bg-black ">
+    <div className="bg-b ">
       <Marquee speed={50} pauseOnHover={true} >
         <div className="flex gap-5 items-center ">
           {skills.map((skill, index) => (
@@ -37,7 +37,7 @@ const MySkill = () => {
               key={index}
               className="
                 p-1
-                bg-[#111] 
+                bg-[#1d1f25] 
                 w-12
                 h-12
                 rounded-md 
@@ -53,7 +53,7 @@ const MySkill = () => {
               "
             >
               {skill.icon}
-              <p className="text-gray-400 mt-1 text-[8px]">{skill.name}</p>
+              <p className="text-gray-300 mt-1 text-[8px]">{skill.name}</p>
             </div>
           ))}
         </div>

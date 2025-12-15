@@ -16,7 +16,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className='flex justify-between items-center md:px-24 px-6 bg-black  py-4 '>
+    <nav className='flex justify-between items-center md:px-24 px-6 bg-[#0f1115] py-4 fixed w-full top-0 z-50'>
       <div className='flex items-center gap-2'> 
         <FaCode size={28} className='text-rose-500'></FaCode>
         <h3 className='md:text-2xl text-xl font-bold text-rose-500'> Junayed Khan</h3>

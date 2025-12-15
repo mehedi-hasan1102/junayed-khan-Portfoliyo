@@ -74,7 +74,7 @@ const PortfolioSection = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
         {portfolioData.map((item, index) => (
           <PortfolioCard key={index} {...item} />
         ))}

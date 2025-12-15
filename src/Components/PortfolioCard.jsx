@@ -3,40 +3,64 @@ import { Link } from "react-router";
 
 const PortfolioCard = ({ image, title, category, views, links }) => {
   return (
-    <div className="
-    
-      relative card bg-[#1d1f25] shadow-xl rounded-2xl p-[2px]
-      transition-all duration-500 cursor-pointer
-      before:absolute before:inset-0 before:rounded-2xl 
-      before:bg-gradient-to-r before:from-rose-500 before:via-rose-400 before:to-rose-600
-      before:opacity-0 hover:before:opacity-100
-    ">
-      <div className="relative bg-[#1d1f25] rounded-2xl p-3">
-        <figure>
+    <div
+      className="
+        relative card 
+        bg-[#1d1f25]
+        shadow-xl
+        rounded-3xl
+        p-[4px]
+        border-2 border-transparent
+        hover:border-rose-500
+        transition-all duration-500
+      "
+    >
+      <div className="relative bg-[#1d1f25] rounded-2xl p-5">
+        <figure className="overflow-hidden rounded-2xl">
           <img
             src={image}
             alt={title}
-            className="rounded-xl w-full h-52 object-cover"
+            className="
+              rounded-2xl
+              w-full h-56
+              object-cover
+              scale-100
+              hover:scale-125
+              transition-transform duration-500 ease-out
+            "
           />
         </figure>
 
-        <div className="mt-4">
-          <p className="text-rose-500 text-sm font-semibold">{category}</p>
-          <h2 className="text-lg font-bold mt-1 text-white">{title}</h2>
-          
-          <div className="flex justify-between items-center mt-2">
-            <p className="text-gray-400 text-sm mt-2 flex items-center gap-2">
-              <span className="text-gray-300">👁</span> {views}
+        <div className="mt-5">
+          <p className="text-rose-500 text-sm font-extrabold tracking-wide">
+            {category}
+          </p>
+
+          <h2 className="text-xl font-extrabold mt-2 text-white leading-snug">
+            {title}
+          </h2>
+
+          <div className="flex justify-between items-center mt-4">
+            <p className="text-gray-300 text-sm font-semibold flex items-center gap-2">
+              <span className="text-lg">👁</span> {views}
             </p>
 
             {/* Multiple Links */}
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               {links?.map((link, index) => (
                 <Link
                   key={index}
                   to={link.url}
-                  className="btn font-bold text-sm"
                   target="_blank"
+                  className="
+                    px-4 py-2
+                    rounded-md
+                    font-extrabold text-sm
+                    bg-rose-500 text-white
+                    hover:bg-rose-600
+                    shadow-lg
+                    transition-all duration-300
+                  "
                 >
                   {link.label}
                 </Link>
