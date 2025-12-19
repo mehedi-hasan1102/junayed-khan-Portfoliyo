@@ -7,7 +7,7 @@ const Hero = () => {
   const texts = [
     "Full Stack Developer.",
     "Front-End Developer.",
-    "Mern Stack Developer",
+    "Mern Stack Developer.",
     "React Developer",
   ];
   const [textIndex, setTextIndex] = useState(0);
@@ -55,7 +55,7 @@ const Hero = () => {
               I'm Junayed Khan
             </h1>
 
-            <div className="text-left ml-10 text-3xl  sm:text-4xl lg:text-5xl xl:text-5xl text-rose-500 mb-12 font-bold h-10">
+            <div className="text-left ml-8 text-3xl  sm:text-4xl lg:text-5xl xl:text-5xl text-rose-500 mb-12 font-bold h-10">
               <span>A {displayText}&nbsp;</span>
             </div>
 
