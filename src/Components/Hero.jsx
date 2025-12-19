@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia";
 
 const Hero = () => {
   const texts = [
-    "Full Stack Web Developer.",
+    "Full Stack Developer.",
     "Front-End Developer..",
     "Mern Stack Developer.",
     "React Developer",
@@ -19,7 +19,7 @@ const Hero = () => {
     let typeSpeed = isDeleting ? 100 : 300;
 
     if (!isDeleting && charIndex === texts[textIndex].length) {
-      typeSpeed = 2000;
+      typeSpeed = 1000;
       setIsDeleting(true);
     } else if (isDeleting && charIndex === 0) {
       setIsDeleting(false);
@@ -50,12 +50,13 @@ const Hero = () => {
 
           {/* LEFT SIDE */}
           <div className="order-2 md:order-1 text-center md:text-left">
+             <h3 className="text-xl text-gray-400 mb-2 text">Welcome to my world</h3>
             <h1 className="text-3xl  sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-300 mb-4">
-              I'm <span className="text-rose-500">Junayed Khan</span>
+              I'm Junayed Khan
             </h1>
 
-            <div className="text-xl text-left ml-[74px] md:ml-0 sm:text-2xl lg:text-3xl text-gray-400 mb-6">
-              <span>{displayText}&nbsp;</span>
+            <div className="text-3xl  sm:text-4xl lg:text-5xl xl:text-5xl text-rose-500 mb-12 font-bold h-10">
+              <span>A {displayText}&nbsp;</span>
             </div>
 
             <p className="text-base sm:text-lg text-gray-500 mb-6 leading-relaxed">
@@ -63,10 +64,10 @@ const Hero = () => {
               excellent user experience are the core focus of my work.
             </p>
 
-            <div className="mb-6 flex justify-center md:justify-start">
+            <div className="mb-2 flex justify-center md:justify-start">
               <SocialMedia />
             </div>
-
+{/* 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="#portfolio"
@@ -81,7 +82,7 @@ const Hero = () => {
               >
                 Get In Touch
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* RIGHT SIDE */}
@@ -94,7 +95,7 @@ const Hero = () => {
             sm:w-72 sm:h-72
             md:w-80 md:h-80
             lg:w-96 lg:h-96
-            mx-auto border-2 border-rose-600 border rounded-full
+            mx-auto border-4 border-rose-600  rounded-full
             flex items-center justify-center shadow-xl overflow-hidden
           ">
                 <img
