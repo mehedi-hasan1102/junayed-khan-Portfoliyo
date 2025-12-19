@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia";
 const Hero = () => {
   const texts = [
     "Full Stack Developer.",
-    "Front-End Developer..",
+    "Front-End Developer.",
     "Mern Stack Developer.",
     "React Developer",
   ];
