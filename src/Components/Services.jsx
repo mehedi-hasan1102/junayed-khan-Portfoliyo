@@ -76,7 +76,7 @@ const Services = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
+              whileHover={{ y: -8  }}
               className="group relative overflow-hidden rounded-2xl 
               border border-cyan-500/20 
               bg-gradient-to-br from-[#06121f] to-[#030814]
@@ -97,7 +97,9 @@ const Services = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="relative z-10 w-12 h-12 rounded-full 
                 text-white flex items-center justify-center
-                bg-cyan-400 text-xl mb-5 "
+                bg-cyan-400 text-xl mb-5 
+                shadow-[0_0_16px_rgba(34,211,238,0.9)]
+                "
               >
                 {item.icon}
               </motion.div>
