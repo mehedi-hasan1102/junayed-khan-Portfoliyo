@@ -5,9 +5,11 @@ import SocialMedia from "./SocialMedia";
 
 const Hero = () => {
   const texts = [
-    "Full Stack Developer.",
+
     "Front-End Developer.",
     "MERN Stack Developer",
+    "Full Stack Developer.",
+    "Web Designer.",
     "React Developer.",
   ];
 
@@ -16,37 +18,37 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState("");
 
-  // 👉 1 second-এ পুরো text complete করার জন্য speed
+ 
   const TYPING_DURATION = 1000; // ms
 
   useEffect(() => {
     const currentText = texts[textIndex];
     const totalChars = currentText.length;
 
-    // প্রতি character-এর delay
+   
     const charSpeed = TYPING_DURATION / totalChars;
 
     let timeout;
 
     if (!isDeleting && charIndex < totalChars) {
-      // Typing
+      
       timeout = setTimeout(() => {
         setDisplayText(currentText.slice(0, charIndex + 1));
         setCharIndex(charIndex + 1);
       }, charSpeed);
     } else if (!isDeleting && charIndex === totalChars) {
-      // Full text typed → pause → delete
+   
       timeout = setTimeout(() => {
         setIsDeleting(true);
       }, 1000);
     } else if (isDeleting && charIndex > 0) {
-      // Deleting
+   
       timeout = setTimeout(() => {
         setDisplayText(currentText.slice(0, charIndex - 1));
         setCharIndex(charIndex - 1);
-      }, charSpeed / 2); // delete faster
+      }, charSpeed / 2); 
     } else if (isDeleting && charIndex === 0) {
-      // Next text
+ 
       setIsDeleting(false);
       setTextIndex((prev) => (prev + 1) % texts.length);
     }
@@ -54,7 +56,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex]);
   return (
-    <section id="home" className="min-h-screen bg-[#050B14] pt-10 mt-6 md:pt-16">
+    <section id="home" className="min-h-screen bg-[#050B14] pt-20  md:pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* GRID — md responsive now fixed */}

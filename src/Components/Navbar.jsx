@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { FaCode } from 'react-icons/fa';
 
@@ -8,58 +8,59 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">Home</NavLink></li>
-      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">About</NavLink></li>
-      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">Contact</NavLink></li>
-      <li><NavLink to="/" className="text-white hover:text-rose-600 transition m-2">My Port</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">Home</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">About</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">Contact</NavLink></li>
+      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">My Port</NavLink></li>
     </>
   );
 
   return (
-    <nav className='flex justify-between items-center md:px-24 px-6 bg-[#0f1115] py-4 fixed w-full top-0 z-50'>
+    <nav className='flex justify-between items-center md:px-24 px-6 bg-cyan-400/10 backdrop-blur-md py-4 fixed w-full top-0 z-50 shadow-lg'>
+      {/* Logo */}
       <div className='flex items-center gap-2'> 
-        <FaCode size={28} className='text-rose-500'></FaCode>
-        <h3 className='md:text-2xl text-xl font-bold text-rose-500'> Junayed Khan</h3>
+        <FaCode size={28} className='text-cyan-400' />
+        <h3 className='md:text-2xl text-xl font-bold text-cyan-400'> Junayed Khan</h3>
       </div>
 
       <div className='relative'>
-        {/* desktop view */}
+        {/* Desktop Links */}
         <ul className='hidden md:flex gap-6 list-none'>
           {links}
         </ul>
 
-        {/* mobile view */}
+        {/* Mobile Menu Button */}
         <div className='md:hidden flex'>
           <button
             onClick={() => setOpen(!open)}
-            className='p-2 rounded-md bg-rose-500 text-white focus:outline-none'
+            className='p-2 rounded-md bg-cyan-400 text-white focus:outline-none'
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* slide menu */}
+        {/* Mobile Slide Menu */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-rose-300 shadow-2xl transform ${
+          className={`fixed top-0 right-0 h-full w-full bg-cyan-400/90 backdrop-blur-md shadow-2xl transform ${
             open ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden z-40`}
         >
-          <div className='flex justify-between items-center p-4 border-b'>
+          <div className='flex justify-between items-center p-4 border-b border-cyan-900'>
             <h2 className='text-lg font-semibold text-white'>Menu</h2>
             <button onClick={() => setOpen(false)} className='text-white'>
               <X size={22} />
             </button>
           </div>
 
-          <ul className='flex flex-col p-6 gap-4 list-none'>
+          <ul className='flex flex-col bg-cyan-400/90 p-6 gap-4 list-none'>
             {links}
           </ul>
         </div>
 
-        {/* overlay */}
+        {/* Overlay */}
         {open && (
           <div
-            className='fixed inset-0 bg-black opacity-40 z-30 md:hidden'
+            className='fixed inset-0 bg-black/40 backdrop-blur-sm z-30 md:hidden'
             onClick={() => setOpen(false)}
           ></div>
         )}

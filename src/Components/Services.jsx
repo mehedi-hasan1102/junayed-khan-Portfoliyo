@@ -9,23 +9,23 @@ import { motion } from "motion/react";
 
 const services = [
   {
-    title: "UI/UX Design",
-    desc: "Each one showcases my approach and dedication to detail, creativity.",
-    icon: <FaPaintBrush />,
-  },
-  {
     title: "Web Development",
-    desc: "Business consulting consults us to provide expert advice.",
+    desc: "Building robust, scalable, and high-performance web applications tailored to meet your business goals.",
     icon: <FaCode />,
   },
   {
+    title: "Web Design",
+    desc: "Crafting visually stunning and intuitive interfaces that captivate users and enhance experience.",
+    icon: <FaPaintBrush />,
+  },
+  {
     title: "Business Solutions",
-    desc: "Optimizing operations, enhancing productivity and driving growth.",
+    desc: "Streamlining operations and implementing smart strategies to boost productivity and growth.",
     icon: <FaChartLine />,
   },
   {
     title: "Profit Partners",
-    desc: "Strategic collaboration to maximize revenue and long-term value.",
+    desc: "Collaborating strategically to maximize revenue, optimize resources, and create lasting value.",
     icon: <FaHandshake />,
   },
 ];
@@ -76,7 +76,7 @@ const Services = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              whileHover={{ y: -8  }}
+              whileHover={{ y: -8 }}
               className="group relative overflow-hidden rounded-2xl 
               border border-cyan-500/20 
               bg-gradient-to-br from-[#06121f] to-[#030814]

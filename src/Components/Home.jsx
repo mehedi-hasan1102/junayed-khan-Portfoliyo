@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
-import About from './About';
 import Footer from './Footer';
 import PortfolioSection from '../Components/PortfolioSection'
 import Services from './Services';
@@ -14,10 +13,8 @@ const Home = () => {
                 <Navbar></Navbar>
                 <Hero></Hero>
             </header>
-            <About></About>
-
-            <PortfolioSection></PortfolioSection>
             <Services></Services>
+            <PortfolioSection></PortfolioSection>
             <Contact></Contact>
             <Footer></Footer>
         </div>
