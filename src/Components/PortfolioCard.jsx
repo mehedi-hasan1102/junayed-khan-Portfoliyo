@@ -6,18 +6,19 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
     <div
       className="
         relative card 
-        bg-[#1d1f25]
+        bg-[#050B14]
         shadow-xl
         rounded-xl
         p-[4px]
-        border-2 border-transparent
-        hover:border-rose-300
+        border-2 
+         border-cyan-500/20 
+        hover:border-cyan-400
         transition-all duration-500
-        hover:shadow-rose-300/20
-        hover:translate-t-2
+        hover:shadow-cyan-400/20
+        hover:-translate-y-3
       "
     >
-      <div className="relative bg-[#1d1f25] rounded-2xl p-5">
+      <div className="relative bg-[#050B14] rounded-2xl p-5">
         <figure className="overflow-hidden rounded-2xl">
           <img
             src={image}
@@ -34,20 +35,23 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
         </figure>
 
         <div className="mt-5">
-          <p className="text-rose-500 text-sm font-extrabold tracking-wide">
+          {/* Category */}
+          <p className="text-cyan-400 text-sm font-extrabold tracking-wide">
             {category}
           </p>
 
-          <h2 className="text-xl font-extrabold mt-2 text-white/80 leading-snug">
+          {/* Title */}
+          <h2 className="text-xl font-extrabold mt-2 text-gray-300 leading-snug">
             {title}
           </h2>
 
           <div className="flex justify-between items-center mt-8">
+            {/* Views */}
             <p className="text-gray-300 text-sm font-semibold flex items-center gap-2">
               <span className="text-lg">👁</span> {views}
             </p>
 
-            {/* Multiple Links */}
+            {/* Buttons */}
             <div className="flex gap-3">
               {links?.map((link, index) => (
                 <Link
@@ -58,8 +62,8 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
                     px-4 py-2
                     rounded-md
                     font-extrabold text-sm
-                    bg-rose-500 text-white
-                    hover:bg-rose-600
+                    bg-cyan-500 text-white
+                    hover:bg-cyan-600
                     shadow-lg
                     transition-all duration-300
                   "

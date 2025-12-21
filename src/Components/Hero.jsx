@@ -5,9 +5,9 @@ import SocialMedia from "./SocialMedia";
 
 const Hero = () => {
   const texts = [
-    "Full Stack Developer.|",
+    "Full Stack Developer.",
     "Front-End Developer.",
-    "MERN Stack Developer.",
+    "MERN Stack Developer",
     "React Developer.",
   ];
 
@@ -71,7 +71,7 @@ const Hero = () => {
               <span> <span className="text-white">A</span> {displayText}&nbsp;</span>
             </div>
 
-            <p className="text-base sm:text-lg text-gray-500 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed">
               I create beautiful and functional web experiences. Clean design and
               excellent user experience are the core focus of my work.
             </p>
@@ -106,21 +106,21 @@ const Hero = () => {
             w-56 h-56
             sm:w-72 sm:h-72
             md:w-80 md:h-80
-            lg:w-96 lg:h-96
-            mx-auto border-4 border-rose-600  rounded-full
+            lg:w-106 lg:h-106
+            mx-auto border-8 border-cyan-500/20 rounded-2xl
             flex items-center justify-center shadow-xl overflow-hidden
           ">
                 <img
                   src={img}
                   alt="Junayed Khan  Wev develper"
-                  className="rounded-2xl object-cover w-full h-full "
+                  className=" object-cover w-full h-full "
                 />
               </div>
 
-              <div className="absolute -top-3 -right-3 lg:-top-5 lg:-right-5 w-14 h-14 md:w-20 md:h-20 bg-rose-300 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -top-3 -right-3 lg:-top-5 lg:-right-5 w-14 h-14 md:w-20 md:h-20 bg-cyan-300 rounded-full opacity-20 animate-pulse"></div>
 
               <div
-                className="absolute -bottom-5 -left-3 lg:-bottom-5 lg:-left-5 w-16 h-16 md:w-24 md:h-24 bg-rose-400 rounded-full opacity-20 animate-pulse"
+                className="absolute -bottom-5 -left-3 lg:-bottom-5 lg:-left-5 w-16 h-16 md:w-24 md:h-24 bg-cyan-400 rounded-full opacity-20 animate-pulse"
                 style={{ animationDelay: "1s" }}
               ></div>
             </div>

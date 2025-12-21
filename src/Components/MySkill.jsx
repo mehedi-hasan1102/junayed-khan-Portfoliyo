@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import figma from '../assets/figmaIcon.png'
+import figma from '../assets/figmaIcon.png';
 import {
   FaHtml5,
   FaCss3Alt,
@@ -18,20 +18,19 @@ const MySkill = () => {
     { icon: <FaJsSquare size={28} className="text-yellow-400" />, name: "JavaScript" },
     { icon: <FaReact size={28} className="text-cyan-400" />, name: "React JS" },
     { icon: <SiTailwindcss size={28} className="text-sky-400" />, name: "TailwindCSS" },
-    { icon: <IoLogoFirebase size={28} className="text-orange-400" />, name: "Firebse" },
+    { icon: <IoLogoFirebase size={28} className="text-orange-400" />, name: "Firebase" },
     { icon: <IoLogoNodejs size={28} className="text-green-700" />, name: "Node.js" },
     { icon: <FaBootstrap size={28} className="text-indigo-500" />, name: "Bootstrap" },
     { icon: <SiExpress size={28} className="text-white" />, name: "Express.js" },
     { icon: <SiNextdotjs size={28} className="text-gray-200" />, name: "Next.js" },
     { icon: <SiMongodb pauseOnHover={true} size={32} className="text-green-500" />, name: "MongoDB" },
-    { icon: <img className=" size-7 text-center" src={figma}></img>, name: "Figma" },
-
+    { icon: <img className="w-6 h-6" src={figma} alt="Figma" />, name: "Figma" },
   ];
 
   return (
-    <div className="bg-b ">
-      <Marquee speed={50} pauseOnHover={true} >
-        <div className="flex gap-5 items-center ">
+    <div className="bg-transparent">
+      <Marquee speed={50} pauseOnHover={true}>
+        <div className="flex gap-5 items-center">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -47,9 +46,10 @@ const MySkill = () => {
                 justify-center 
                 items-center 
                 border 
-                border-gray-700 
-                hover:border-rose-400
-                hover:shadow-rose-300/70
+                border-gray-300
+                hover:border-cyan-400
+                hover:shadow-cyan-300/50
+                transition-all duration-300
               "
             >
               {skill.icon}

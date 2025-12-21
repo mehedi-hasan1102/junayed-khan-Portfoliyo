@@ -38,28 +38,28 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center md:text-left"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-400 mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-300 mb-4 leading-tight">
             About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-rose-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600">
               Me
             </span>
           </h2>
 
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
-            I'm <span className="font-semibold text-gray-500">Junayed</span>, a
+          <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-4">
+            I'm <span className="font-semibold text-gray-300">Junayed</span>, a
             passionate{" "}
-            <span className="text-rose-500 font-semibold">
+            <span className="text-cyan-400 font-semibold">
               Full Stack Developer
             </span>{" "}
             dedicated to crafting elegant and high-performing digital solutions.
           </p>
 
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-4">
             I love transforming complex ideas into intuitive interfaces and
             efficient systems that deliver meaningful user experiences.
           </p>
 
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-2">
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-2">
             Skilled in React.js, Next.js, Node.js, MongoDB, and modern
             full-stack engineering — creating scalable and beautifully crafted
             web applications.
