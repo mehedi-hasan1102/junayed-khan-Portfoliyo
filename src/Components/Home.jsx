@@ -5,6 +5,7 @@ import Footer from './Footer';
 import PortfolioSection from '../Components/PortfolioSection'
 import Services from './Services';
 import Contact from './Contact';
+import BlogPage from './BlogPost';
 
 const Home = () => {
     return (

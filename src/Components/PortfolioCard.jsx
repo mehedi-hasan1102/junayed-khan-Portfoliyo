@@ -5,52 +5,78 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
   return (
     <div
       className="
-        relative card 
-        bg-[#050B14]
-        shadow-xl
-        rounded-xl
-        p-[4px]
-        border-2 
-         border-cyan-500/20 
-        hover:border-cyan-400
+        group relative
+        bg-gradient-to-br from-cyan-500/10 via-transparent to-cyan-500/10
+        rounded-2xl
+        p-[2px]
+        hover:from-cyan-400/30 hover:to-cyan-400/30
         transition-all duration-500
-        hover:shadow-cyan-400/20
-        hover:-translate-y-3
       "
     >
-      <div className="relative bg-[#050B14] rounded-2xl p-5">
-        <figure className="overflow-hidden rounded-2xl">
+      <div
+        className="
+          relative bg-[#050B14]
+          rounded-2xl
+          overflow-hidden
+          shadow-xl
+          group-hover:shadow-cyan-500/20
+          transition-all duration-500
+          group-hover:-translate-y-3
+        "
+      >
+        {/* Image */}
+        <figure className="relative overflow-hidden">
           <img
             src={image}
             alt={title}
             className="
-              rounded-2xl
               w-full h-56
               object-cover
               scale-100
-              hover:scale-125
-              transition-transform duration-500 ease-out
-              brightness-60
-              hover:brightness-100
+              transition-all duration-700 ease-out
+              brightness-80
+              group-hover:scale-110
+              group-hover:brightness-100
             "
           />
+
+          {/* Image overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050B14]/90 via-[#050B14]/40 to-transparent" />
         </figure>
 
-        <div className="mt-5">
+        {/* Content */}
+        <div className="p-5">
           {/* Category */}
-          <p className="text-cyan-400 text-sm font-extrabold tracking-wide">
+          <span
+            className="
+              inline-block
+              text-cyan-400 text-xs font-extrabold
+              tracking-widest uppercase
+            "
+          >
             {category}
-          </p>
+          </span>
 
           {/* Title */}
-          <h2 className="text-1xl font-extrabold mt-2 text-gray-300 leading-snug">
+          <h2
+            className="
+              mt-3
+              text-lg font-extrabold
+              text-gray-200
+              leading-snug
+              group-hover:text-cyan-300
+              transition-colors duration-300
+            "
+          >
             {title}
           </h2>
 
+          {/* Footer */}
           <div className="flex justify-between items-center mt-8">
             {/* Views */}
-            <p className="text-gray-300 text-sm font-semibold flex items-center gap-2">
-              <span className="text-lg">👁</span> {views}
+            <p className="flex items-center gap-2 text-gray-400 text-sm font-semibold">
+              <span className="text-cyan-400 text-lg">👁</span>
+              {views}
             </p>
 
             {/* Buttons */}
@@ -62,11 +88,12 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
                   target="_blank"
                   className="
                     px-4 py-2
-                    rounded-md
-                    font-extrabold text-sm
-                    bg-cyan-500 text-white
-                    hover:bg-cyan-600
-                    shadow-lg
+                    rounded-lg
+                    text-sm font-bold
+                    bg-cyan-500/90 text-white
+                    hover:bg-cyan-400
+                    hover:shadow-cyan-400/30
+                    shadow-md
                     transition-all duration-300
                   "
                 >
@@ -76,6 +103,16 @@ const PortfolioCard = ({ image, title, category, views, links }) => {
             </div>
           </div>
         </div>
+
+        {/* Glow line */}
+        <span
+          className="
+            absolute inset-x-0 bottom-0 h-[2px]
+            bg-gradient-to-r from-transparent via-cyan-400 to-transparent
+            opacity-0 group-hover:opacity-100
+            transition-opacity duration-500
+          "
+        />
       </div>
     </div>
   );
