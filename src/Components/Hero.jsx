@@ -18,37 +18,37 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState("");
 
- 
+
   const TYPING_DURATION = 1000; // ms
 
   useEffect(() => {
     const currentText = texts[textIndex];
     const totalChars = currentText.length;
 
-   
+
     const charSpeed = TYPING_DURATION / totalChars;
 
     let timeout;
 
     if (!isDeleting && charIndex < totalChars) {
-      
+
       timeout = setTimeout(() => {
         setDisplayText(currentText.slice(0, charIndex + 1));
         setCharIndex(charIndex + 1);
       }, charSpeed);
     } else if (!isDeleting && charIndex === totalChars) {
-   
+
       timeout = setTimeout(() => {
         setIsDeleting(true);
       }, 1000);
     } else if (isDeleting && charIndex > 0) {
-   
+
       timeout = setTimeout(() => {
         setDisplayText(currentText.slice(0, charIndex - 1));
         setCharIndex(charIndex - 1);
-      }, charSpeed / 2); 
+      }, charSpeed / 2);
     } else if (isDeleting && charIndex === 0) {
- 
+
       setIsDeleting(false);
       setTextIndex((prev) => (prev + 1) % texts.length);
     }
@@ -56,7 +56,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex]);
   return (
-    <section id="home" className="min-h-screen bg-[#050B14] pt-20  md:pt-16">
+    <section id="home" className="min-h-screen bg-[#050B14] pt-20  md:pt-30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* GRID — md responsive now fixed */}
@@ -81,22 +81,40 @@ const Hero = () => {
             <div className="mb-2 flex justify-center md:justify-start">
               <SocialMedia />
             </div>
-            {/* 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
               <a
                 href="#portfolio"
-                className="scroll-smooth bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                className="
+      scroll-smooth
+      bg-cyan-500 hover:bg-cyan-600
+      text-white
+      px-6 py-3
+      rounded-lg
+      font-semibold
+      transition-colors duration-300
+      shadow-md shadow-cyan-500/30
+    "
               >
                 View My Work
               </a>
 
               <a
                 href="#contact"
-                className="border-2 border-rose-500 text-rose-500 hover:bg-rose-600 hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                className="
+      border-2 border-cyan-500
+      text-cyan-500
+      hover:bg-cyan-500 hover:text-white
+      px-6 py-3
+      rounded-lg
+      font-semibold
+      transition-all duration-300
+    "
               >
                 Get In Touch
               </a>
-            </div> */}
+            </div>
+
           </div>
 
           {/* RIGHT SIDE */}
