@@ -56,7 +56,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, textIndex]);
   return (
-    <section id="home" className="min-h-screen bg-[#050B14] pt-20 ">
+    <section id="home" className=" bg-[#050B14] pt-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* GRID — md responsive now fixed */}

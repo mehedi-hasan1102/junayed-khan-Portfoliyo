@@ -1,118 +1,71 @@
-import React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const PortfolioCard = ({ image, title, category, views, links }) => {
   return (
     <div
       className="
-        group relative
-        bg-gradient-to-br from-cyan-500/10 via-transparent to-cyan-500/10
-        rounded-2xl
-        p-[2px]
-        hover:from-cyan-400/30 hover:to-cyan-400/30
+        max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6
+        group rounded-2xl overflow-hidden
+        bg-gradient-to-br from-[#071726] to-[#030814]
+        border border-cyan-400/10
+        hover:border-cyan-400/30
         transition-all duration-500
       "
     >
-      <div
-        className="
-          relative bg-[#050B14]
-          rounded-2xl
-          overflow-hidden
-          shadow-xl
-          group-hover:shadow-cyan-500/20
-          transition-all duration-500
-          group-hover:-translate-y-3
-        "
-      >
-        {/* Image */}
-        <figure className="relative overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="
-              w-full h-56
-              object-cover
-              scale-100
-              transition-all duration-700 ease-out
-              brightness-80
-              group-hover:scale-110
-              group-hover:brightness-100
-            "
-          />
-
-          {/* Image overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050B14]/90 via-[#050B14]/40 to-transparent" />
-        </figure>
-
-        {/* Content */}
-        <div className="p-5">
-          {/* Category */}
-          <span
-            className="
-              inline-block
-              text-cyan-400 text-xs font-extrabold
-              tracking-widest uppercase
-            "
-          >
-            {category}
-          </span>
-
-          {/* Title */}
-          <h2
-            className="
-              mt-3
-              text-lg font-extrabold
-              text-gray-200
-              leading-snug
-              group-hover:text-cyan-300
-              transition-colors duration-300
-            "
-          >
-            {title}
-          </h2>
-
-          {/* Footer */}
-          <div className="flex justify-between items-center mt-8">
-            {/* Views */}
-            <p className="flex items-center gap-2 text-gray-400 text-sm font-semibold">
-              <span className="text-cyan-400 text-lg">👁</span>
-              {views}
-            </p>
-
-            {/* Buttons */}
-            <div className="flex gap-3">
-              {links?.map((link, index) => (
-                <Link
-                  key={index}
-                  to={link.url}
-                  target="_blank"
-                  className="
-                    px-4 py-2
-                    rounded-lg
-                    text-sm font-bold
-                    bg-cyan-500/90 text-white
-                    hover:bg-cyan-400
-                    hover:shadow-cyan-400/30
-                    shadow-md
-                    transition-all duration-300
-                  "
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Glow line */}
-        <span
+      {/* Image */}
+      <div className="relative overflow-hidden">
+        <img
+          src={image}
+          alt={title}
           className="
-            absolute inset-x-0 bottom-0 h-[2px]
-            bg-gradient-to-r from-transparent via-cyan-400 to-transparent
-            opacity-0 group-hover:opacity-100
-            transition-opacity duration-500
+            w-full h-52 object-cover
+            transition-transform duration-500
+            group-hover:scale-105 
+            brightness-80 group-hover:brightness-100
           "
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050B14]/80 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="p-6">
+        {/* Category */}
+        <span className="text-cyan-400 text-xs uppercase tracking-widest font-semibold">
+          {category}
+        </span>
+
+        {/* Title */}
+        <h3 className="mt-2 text-lg font-semibold text-white leading-snug">
+          {title}
+        </h3>
+
+        {/* Footer */}
+        <div className="flex items-center justify-between mt-6">
+          {/* Views */}
+          <p className="text-sm text-gray-400 flex items-center gap-1">
+            👁 {views}
+          </p>
+
+          {/* Buttons */}
+          <div className="flex gap-2">
+            {links?.map((link, index) => (
+              <Link
+                key={index}
+                to={link.url}
+                target="_blank"
+                className="
+                  text-sm text-cyan-400
+                  border border-cyan-400/30
+                  px-4 py-1.5 rounded-full
+                  hover:bg-cyan-400 hover:text-black
+                  transition
+                "
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
