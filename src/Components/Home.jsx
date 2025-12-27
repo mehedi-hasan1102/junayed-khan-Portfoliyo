@@ -9,11 +9,9 @@ import BlogPage from './BlogPost';
 
 const Home = () => {
     return (
-        <div className=''>
-            <header className=''>
+        <div>
                 <Navbar></Navbar>
                 <Hero></Hero>
-            </header>
             <Services></Services>
             <PortfolioSection></PortfolioSection>
             <Contact></Contact>

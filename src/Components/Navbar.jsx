@@ -17,7 +17,8 @@ const Navbar = () => {
   );
 
   return (
-    <nav className='flex justify-between items-center md:px-24 px-6 bg-cyan-400/10 backdrop-blur-md py-4 fixed w-full top-0 z-50 shadow-lg'>
+    <nav className='flex justify-between items-center md:px-24 px-6 bg-[#000c16]
+ backdrop-blur-md py-4  w-full top-0  shadow-lg'>
       {/* Logo */}
       <Link to="/">
       <div className='flex items-center gap-2'> 
