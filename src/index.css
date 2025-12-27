@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
 
 @import "tailwindcss";
 @plugin "daisyui";
@@ -21,4 +21,13 @@
   font-style: normal;
 }
 
-
+.federant-regular {
+  font-family: "Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.federant-bold {
+  font-family: "Federant", serif;
+  font-weight: 700;
+  font-style: normal;
+}

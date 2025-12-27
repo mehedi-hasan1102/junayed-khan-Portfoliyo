@@ -22,8 +22,8 @@ const Navbar = () => {
       {/* Logo */}
       <Link to="/">
       <div className='flex items-center gap-2'> 
-        <FaCode size={28} className='text-cyan-400' />
-        <h3 className='md:text-2xl text-xl font-bold text-cyan-400'> Junayed Khan</h3>
+        {/* <FaCode size={28} className='text-cyan-400' /> */}
+        <h3 className='federant-bold md:text-4xl text-xl font-bold text-cyan-400'> Junayed <span className='text-white'>Khan</span></h3>
       </div>
       </Link>
 

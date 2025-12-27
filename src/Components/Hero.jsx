@@ -82,7 +82,7 @@ const Hero = () => {
               <SocialMedia />
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
               <a
                 href="#portfolio"
                 className="
@@ -113,7 +113,7 @@ const Hero = () => {
               >
                 Get In Touch
               </a>
-            </div>
+            </div> */}
 
           </div>
 
