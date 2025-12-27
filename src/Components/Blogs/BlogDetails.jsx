@@ -15,8 +15,8 @@ const BlogDetails = () => {
 
   return (
     <section className="bg-[#050B14] py-20 px-4 min-h-screen">
-      <div className="max-w-4xl mx-auto">
-        <div className="rounded-2xl overflow-hidden mb-10 border border-cyan-400/10">
+      <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden">
+        <div className=" overflow-hidden  border border-cyan-400/10">
           <img
             src={blog.img}
             alt={blog.title}
@@ -26,7 +26,7 @@ const BlogDetails = () => {
 
         <div
           className="bg-gradient-to-br from-[#071726] to-[#030814]
-          border border-cyan-400/10 rounded-2xl p-8 md:p-10"
+          border border-cyan-400/10  p-8 md:p-10"
         >
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
             {blog.title}

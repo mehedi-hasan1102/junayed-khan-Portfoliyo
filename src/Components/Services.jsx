@@ -21,7 +21,7 @@ const services = [
     icon: <FaWordpress />,
     features: [
       "Easy Content Management",
-      "eCommerce F",
+      "eCommerce Functionality",
       "Mobile Friendly",
       "SEO Ready",
       "Fast Setup",
@@ -29,13 +29,8 @@ const services = [
   },
 ];
 
-
-
 const cardVariants = {
-  hidden: {
-    opacity: 0,
-    y: 30,
-  },
+  hidden: { opacity: 0, y: 30 },
   visible: (i) => ({
     opacity: 1,
     y: 0,
@@ -49,7 +44,7 @@ const cardVariants = {
 
 const Services = () => {
   return (
-    <section className="bg-[#050B14] py-20 px-4 md:px-8 lg:px-20">
+    <section className="bg-[#050B14] py-16 md:py-20 px-4 md:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
@@ -58,18 +53,18 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-14"
+          className="text-center mb-12 md:mb-14"
         >
-          <p className="text-cyan-400 uppercase tracking-widest text-sm">
+          <p className="text-cyan-400 uppercase tracking-widest text-xs sm:text-sm">
             Services
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-2">
             Professional Web Solutions
           </h2>
         </motion.div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {services.map((item, index) => (
             <motion.div
               key={index}
@@ -82,12 +77,11 @@ const Services = () => {
               className="group relative rounded-2xl border 
               border-cyan-400/10 
               bg-gradient-to-br from-[#071726] to-[#030814]
-              p-8 transition-all duration-500
+              p-6 sm:p-7 lg:p-8 transition-all duration-500
               hover:border-cyan-400/30"
             >
               {/* Hover Overlay */}
-              <div
-                className="absolute inset-0 rounded-2xl 
+              <div className="absolute inset-0 rounded-2xl 
                 bg-gradient-to-t from-cyan-500/10 to-transparent
                 opacity-0 group-hover:opacity-100 
                 transition-opacity duration-500"
@@ -97,29 +91,29 @@ const Services = () => {
               <motion.div
                 whileHover={{ scale: 1.12 }}
                 transition={{ type: "spring", stiffness: 250 }}
-                className="relative z-10 w-12 h-12 rounded-full 
+                className="relative z-10 w-12 h-12 sm:w-16 sm:h-16 rounded-full 
                 bg-cyan-500 text-white flex items-center justify-center 
-                text-xl mb-5
+                text-lg sm:text-xl mb-4 sm:mb-5
                 shadow-[0_0_10px_rgba(34,211,238,0.4)]"
               >
                 {item.icon}
               </motion.div>
 
               {/* Content */}
-              <h3 className="relative z-10 text-xl font-semibold text-white mb-1">
+              <h3 className="relative z-10 text-lg sm:text-xl md:text-2xl font-semibold text-white mb-1">
                 {item.title}
               </h3>
 
-              <p className="relative z-10 text-sm text-cyan-400 mb-3">
+              <p className="relative z-10 text-xs sm:text-sm md:text-base text-cyan-400 mb-3">
                 {item.subtitle}
               </p>
 
-              <p className="relative z-10 text-gray-300 text-sm leading-relaxed">
+              <p className="relative z-10 text-sm sm:text-base text-gray-300 leading-relaxed">
                 {item.desc}
               </p>
 
               {/* Highlights */}
-              <div className="relative z-10 mt-5 flex flex-wrap gap-2 text-xs text-gray-400">
+              <div className="relative z-10 mt-4 flex flex-wrap gap-2 text-[11px] sm:text-xs text-gray-400">
                 {item.features.map((feature, i) => (
                   <span
                     key={i}
