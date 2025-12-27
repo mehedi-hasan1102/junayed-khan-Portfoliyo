@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { blogsData } from "./blogsData";
+import Error from "../Error";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -7,8 +8,8 @@ const BlogDetails = () => {
 
   if (!blog) {
     return (
-      <section className="bg-[#050B14] min-h-screen flex items-center justify-center">
-        <p className="text-gray-400">Blog not found</p>
+      <section className="bg-[#050B14] min-h-screen ">
+         <Error></Error>
       </section>
     );
   }
@@ -20,7 +21,7 @@ const BlogDetails = () => {
           <img
             src={blog.img}
             alt={blog.title}
-            className="w-full h-[260px] md:h-[400px] object-cover"
+            className="w-full h-[260px] md:h-[300px] object-cover"
           />
         </div>
 

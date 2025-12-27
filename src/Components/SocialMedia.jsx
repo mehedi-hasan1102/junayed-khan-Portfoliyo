@@ -10,7 +10,7 @@ const SocialMedia = () => {
                 <Link to="https://github.com/junayed-khan24"><FaGithub size={24}></FaGithub></Link>
             </div>
             <div className='p-2 border border-gray-300 text-gray-300 hover:text-white  rounded-full hover:animate-pulse   hover:border-cyan-500 hover:bg-cyan-500'>
-                <Link to="/"><FaLinkedin size={24}></FaLinkedin></Link>
+                <Link to="https://www.linkedin.com/in/md-junayed-khan-7975692a8/"><FaLinkedin size={24}></FaLinkedin></Link>
             </div>
             <div className='p-2 border border-gray-300 text-gray-300 hover:text-white rounded-full hover:animate-pulse  hover:bg-cyan-500 hover:border-cyan-500'>
                 <FaXTwitter size={24}></FaXTwitter>

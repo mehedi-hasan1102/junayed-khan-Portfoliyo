@@ -1,74 +1,122 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { FaCode } from 'react-icons/fa';
-import { Link } from 'react-router';
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import { Link as ScrollLink } from "react-scroll";
 
-const Navbar = () => { 
+
+const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const navLinkClass = ({ isActive }) =>
+    `text-white transition px-3 py-2 rounded-md
+     hover:text-cyan-400
+     ${isActive ? "text-cyan-400" : ""}`;
 
   const links = (
     <>
-      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">Home</NavLink></li>
-      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">About</NavLink></li>
-      <li><NavLink to="/blogs" className="text-white hover:text-cyan-400 transition m-2">Blog</NavLink></li>
-      <li><NavLink to="/" className="text-white hover:text-cyan-400 transition m-2">Contact</NavLink></li>
+      <ScrollLink
+  to="hero"
+  smooth={true}
+  duration={800} 
+>
+  <li onClick={() => setOpen(false)}>
+        <NavLink to="/" className={navLinkClass}>
+          Home
+        </NavLink>
+      </li>
+</ScrollLink>
+      
+
+      <li onClick={() => setOpen(false)}>
+        <NavLink to="/" className={navLinkClass}>
+          About
+        </NavLink>
+      </li>
+
+      <li onClick={() => setOpen(false)}>
+        <NavLink to="/blogs" className={navLinkClass}>
+          Blogs
+        </NavLink>
+      </li>
+
+
+      <ScrollLink
+        to="contact"
+        smooth={true}
+        duration={900} // milliseconds
+      >
+         <li onClick={() => setOpen(false)}>
+        <NavLink to="/" className={navLinkClass}>
+          Contact
+        </NavLink>
+      </li>
+      </ScrollLink>
+
+     
     </>
   );
 
   return (
-    <nav className='flex justify-between items-center md:px-24 px-6 bg-[#000c16]
- backdrop-blur-md py-4  w-full top-0  shadow-lg'>
-      {/* Logo */}
-      <Link to="/">
-      <div className='flex items-center gap-2'> 
-        {/* <FaCode size={28} className='text-cyan-400' /> */}
-        <h3 className='federant-bold md:text-4xl text-xl font-bold text-cyan-400'> Junayed <span className='text-white'>Khan</span></h3>
-      </div>
-      </Link>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#000c16]/80 backdrop-blur-md shadow-lg">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-16 py-4">
 
-      <div className='relative'>
-        {/* Desktop Links */}
-        <ul className='hidden md:flex gap-6 list-none'>
+        {/* Logo */}
+        <Link to="/" className=" federant-bold flex items-center gap-2">
+          <h3 className="text-xl md:text-3xl font-bold text-cyan-400">
+            Junayed <span className="text-white">Khan</span>
+          </h3>
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-6 list-none">
           {links}
         </ul>
 
-        {/* Mobile Menu Button */}
-        <div className='md:hidden flex'>
-          <button
-            onClick={() => setOpen(!open)}
-            className='p-2 rounded-md bg-cyan-400 text-white focus:outline-none'
-          >
-            {open ? <X size={24} /> : <Menu size={24} />}
+        {/* Mobile Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden p-2 rounded-md bg-cyan-400 text-black"
+        >
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden fixed top-0 right-0 h-[400px] w-[100%]  bg-[#050B14]
+        transform ${open ? "translate-x-0" : "translate-x-full"}
+        transition-transform duration-300 ease-in-out z-40`}
+      >
+        <div className="flex justify-between items-center px-6 py-4 border-b border-cyan-400/20">
+          <h2 className="text-lg font-semibold text-white">Menu</h2>
+          <button onClick={() => setOpen(false)}>
+            <X size={22} className="text-white" />
           </button>
         </div>
 
-        {/* Mobile Slide Menu */}
-        <div
-          className={`fixed top-0 right-0 h-full w-full bg-cyan-400/90 backdrop-blur-md shadow-2xl transform ${
-            open ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out md:hidden z-40`}
-        >
-          <div className='flex justify-between items-center p-4 border-b border-cyan-900'>
-            <h2 className='text-lg font-semibold text-white '>Menu</h2>
-            <button onClick={() => setOpen(false)} className='text-white'>
-              <X size={22} />
-            </button>
-          </div>
+        <ul className="flex flex-col gap-4 px-6 py-6 list-none">
+          {links}
+        </ul>
 
-          <ul className='flex flex-col bg-cyan-400/90 p-6 gap-4 list-none'>
-            {links}
-          </ul>
-        </div>
+        {/* Logo */}
+        <Link to="/" className="flex items-center gap-2 text-center ml-24 mt-12">
+          <h3 className="federant-bold  text-xl md:text-xl font-bold text-cyan-400 text-center">
+            Junayed <span className="text-white text-center">Khan</span>
+          </h3>
+        </Link>
 
-        {/* Overlay */}
-        {open && (
-          <div
-            className='fixed inset-0 bg-black/40 backdrop-blur-sm z-30 md:hidden'
-            onClick={() => setOpen(false)}
-          ></div>
-        )}
+        <div className="divider border-t-1 border-cyan-400/20"></div>
+
+
       </div>
+
+      {/* Overlay */}
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/50 z-30 md:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </nav>
   );
 };
