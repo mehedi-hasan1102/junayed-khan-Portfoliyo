@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import img from "../../src/assets/junayed.png";
-
 const Hero = () => {
   const texts = [
     "Front-End Developer.",
@@ -90,18 +89,7 @@ const Hero = () => {
               excellent user experience are the core focus of my work.
             </p>
             <div className="flex gap-2 justify-center md:justify-start">
-              {/* View My Work Button */}
-              <ScrollLink
-                to="portfolio"
-                smooth={true}
-                duration={800}
-                className="text-base sm:text-lg font-medium text-cyan-400
-               border border-cyan-400/30 px-5 py-2 rounded-full
-               hover:bg-cyan-400 hover:text-black transition-colors duration-300 cursor-pointer flex items-center gap-2"
-              >
-                View My Work →
-              </ScrollLink>
-
+             
               {/* Get In Touch Button */}
               <ScrollLink
                 to="contact"
@@ -113,6 +101,21 @@ const Hero = () => {
               >
                 Get In Touch
               </ScrollLink>
+
+               {/* View My Work Button */}
+              <ScrollLink
+                to="portfolio"
+                smooth={true}
+                duration={800}
+                className="text-base sm:text-lg font-medium text-cyan-400
+               border border-cyan-400/30 px-5 py-2 rounded-full
+               hover:bg-cyan-400 hover:text-black transition-colors duration-300 cursor-pointer flex items-center gap-2"
+              >
+                View My Work →
+              </ScrollLink>
+
+
+
             </div>
 
           </motion.div>
@@ -138,7 +141,7 @@ const Hero = () => {
               </div>
 
               <div className="absolute -top-3 -right-3 lg:-top-5 lg:-right-5 w-14 h-14 md:w-20 md:h-20 bg-cyan-300 rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-5 -left-3 lg:-bottom-5 lg:-left-5 w-16 h-16 md:w-24 md:h-24 bg-cyan-400 rounded-full opacity-20 animate-pulse" style={{ animationDelay: "1s" }}></div>
+              <div className="absolute -bottom-5 -left-3 lg:-bottom-5 lg:-left-5 w-16 h-16 md:w-24 md:h-24 bg-cyan-400 rounded-full opacity-20 animate-pulse" style={{ animationDelay: "1s" }}> </div>
             </motion.div>
           </motion.div>
 
