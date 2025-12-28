@@ -89,25 +89,32 @@ const Hero = () => {
               I create beautiful and functional web experiences. Clean design and
               excellent user experience are the core focus of my work.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="flex gap-2 justify-center md:justify-start">
+              {/* View My Work Button */}
               <ScrollLink
                 to="portfolio"
                 smooth={true}
                 duration={800}
-                className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md shadow-cyan-500/30 cursor-pointer"
+                className="text-base sm:text-lg font-medium text-cyan-400
+               border border-cyan-400/30 px-5 py-2 rounded-full
+               hover:bg-cyan-400 hover:text-black transition-colors duration-300 cursor-pointer flex items-center gap-2"
               >
-                View My Work
+                View My Work →
               </ScrollLink>
+
+              {/* Get In Touch Button */}
               <ScrollLink
                 to="contact"
                 smooth={true}
                 duration={800}
-                className="border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all cursor-pointer"
+                className="text-base sm:text-lg font-medium hover:bg-[#050B14] hover:text-cyan-400
+               border hover:border-cyan-400/30 px-5 py-2 rounded-full
+              bg-cyan-400 text-black transition-colors duration-300 cursor-pointer flex items-center gap-2"
               >
                 Get In Touch
               </ScrollLink>
             </div>
+
           </motion.div>
 
           {/* RIGHT SIDE */}
