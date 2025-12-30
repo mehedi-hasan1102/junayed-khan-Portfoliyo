@@ -1,15 +1,15 @@
-import CustomWeb from "../../../src/assets/Custom.jpg";
-import BusinessWeb from "../../../src/assets/businessWebsite.WEBP";
-import Ecommerce from "../../../src/assets/eComarch.PNG";
-import StaticvsDynamic from "../../../src/assets/staticvsdynamic.PNG";
-import ResponsiveWeb from "../../../src/assets/Responsive.JPG";
-import Business from "../../../src/assets/Business.JPEG";
+import img1 from "../../../src/assets/Custom.jpg";
+import img2 from "../../../src/assets/business-website.webp";
+import img3 from "../../../src/assets/eComarch.PNG";
+import img4 from "../../../src/assets/staticvs-Dynamic.png";
+import img5 from "../../../src/assets/Responsive.jpg";
+import img6 from "../../../src/assets/Business.jpeg";
 
 export const blogsData = [
   {
     id: "custom-website",
     title: "What is a Custom Website?",
-    img: CustomWeb,
+    img: img1,
     desc:
       "A custom website is fully tailored to your business goals, branding, and performance needs for long-term success.",
     content:
@@ -19,7 +19,7 @@ export const blogsData = [
   {
     id: "business-website",
     title: "Why Does a Business Need a Website?",
-    img: BusinessWeb,
+    img: img2,
     desc:
       "A business website builds trust, improves visibility, and generates leads for growth.",
     content:
@@ -29,7 +29,7 @@ export const blogsData = [
   {
     id: "ecommerce",
     title: "What is an E-commerce Website & Why Is It Important?",
-    img: Ecommerce,
+    img: img3,
     desc:
       "E-commerce websites allow businesses to sell products online securely and efficiently.",
     content:
@@ -39,7 +39,7 @@ export const blogsData = [
   {
     id: "static-vs-dynamic",
     title: "Static vs Dynamic Website – Which One is Better?",
-    img: StaticvsDynamic,
+    img: img4,
     desc:
       "Understand the differences between static and dynamic websites before choosing.",
     content:
@@ -49,7 +49,7 @@ export const blogsData = [
   {
     id: "responsive",
     title: "Why is a Mobile Responsive Website Important?",
-    img: ResponsiveWeb,
+    img: img5,
     desc:
       "Responsive websites adapt to all devices and improve SEO and user experience.",
     content:
@@ -59,7 +59,7 @@ export const blogsData = [
   {
     id: "business-growth",
     title: "How Can a Website Help a Business Grow?",
-    img: Business,
+    img: img6,
     desc:
       "Websites help businesses grow through branding, marketing, and lead generation.",
     content:
