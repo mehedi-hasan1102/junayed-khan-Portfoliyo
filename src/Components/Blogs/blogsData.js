@@ -1,6 +1,6 @@
 import img1 from "../../../src/assets/Custom.jpg";
 import img2 from "../../../src/assets/business-website.webp";
-import img3 from "../../../src/assets/eComarch.PNG";
+import img3 from "../../../src/assets/eComarch.png";
 import img4 from "../../../src/assets/staticvs-Dynamic.png";
 import img5 from "../../../src/assets/Responsive.jpg";
 import img6 from "../../../src/assets/Business.jpeg";
