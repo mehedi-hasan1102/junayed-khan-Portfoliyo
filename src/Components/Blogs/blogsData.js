@@ -1,7 +1,6 @@
 import img1 from "../../assets/custom.jpg";           // lowercase + correct relative path
 import img2 from "../../assets/business-website.webp";
 import img3 from "../../assets/ecomarch.png";
-import img4 from "../../assets/static.png";
 import img5 from "../../assets/responsive.jpg";
 import img6 from "../../assets/business.jpeg";
 
@@ -40,7 +39,7 @@ export const blogsData = [
   {
     id: "static-vs-dynamic",
     title: "Static vs Dynamic Website – Which One is Better?",
-    img: img4,
+    img: img3,
     desc:
       "Understand the differences between static and dynamic websites before choosing.",
     content:
