@@ -1,9 +1,10 @@
-import img1 from "../../../src/assets/Custom.jpg";
-import img2 from "../../../src/assets/business-website.webp";
-import img3 from "../../../src/assets/eComarch.png";
-import img4 from "../../../src/assets/static-dynamic.png";
-import img5 from "../../../src/assets/Responsive.jpg";
-import img6 from "../../../src/assets/Business.jpeg";
+import img1 from "../../assets/custom.jpg";           // lowercase + correct relative path
+import img2 from "../../assets/business-website.webp";
+import img3 from "../../assets/ecomarch.png";
+import img4 from "../../assets/static.png";
+import img5 from "../../assets/responsive.jpg";
+import img6 from "../../assets/business.jpeg";
+
 
 export const blogsData = [
   {
