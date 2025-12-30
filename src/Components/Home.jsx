@@ -10,6 +10,7 @@ import Footer from './Footer';
 import PortfolioSection from '../Components/PortfolioSection';
 import Services from './Services';
 import Contact from './Contact';
+import HomeBlogs from './Blogs/HomeBlogs';
 
 export default function ScrollLinked() {
     const { scrollYProgress } = useScroll();
@@ -45,6 +46,7 @@ function Content() {
             <Hero />
             <Services />
             <PortfolioSection />
+            <HomeBlogs />
             <Contact />
         </article>
     );

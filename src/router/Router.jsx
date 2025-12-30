@@ -15,14 +15,14 @@ const router = createBrowserRouter ([
                 index: true,
                 Component: Home
             },
-            // {
-            //     path: '/blogs',
-            //     Component: Blogs
-            // },
-            // {
-            //     path: '/blogs/:id',
-            //     Component: BlogDetails
-            // },
+            {
+                path: '/blogs',
+                Component: Blogs
+            },
+            {
+                path: '/blogs/:id',
+                Component: BlogDetails
+            },
         ]
 
     },
