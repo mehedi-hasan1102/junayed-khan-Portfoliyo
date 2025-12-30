@@ -1,4 +1,4 @@
-import CustomWeb from "../../../src/assets/Custom.JPG";
+import CustomWeb from "../../../src/assets/Custom.jpg";
 import BusinessWeb from "../../../src/assets/businessWebsite.WEBP";
 import Ecommerce from "../../../src/assets/eComarch.PNG";
 import StaticvsDynamic from "../../../src/assets/staticvsdynamic.PNG";
