@@ -36,7 +36,7 @@ export default function ScrollLinked() {
             <Content />
         </>
     );
-}
+} 
 
 function Content() {
     return (

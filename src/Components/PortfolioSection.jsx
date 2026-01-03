@@ -51,10 +51,10 @@ const PortfolioSection = () => {
 {
   image: DevBoard,
   title: "DevBoard Platform – Frontend Development Project",
-  category: "React / Frontend",
+  category: "Frontend Development",
   views: 380,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/assinmentt-5/" },
+    { label: "Live Demo", url: "https://devboardd.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/assinmentt-5" },
   ],
 },
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
   category: "Frontend Development",
   views: 450,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/assinmentt-5/" },
+    { label: "Live Demo", url: "https://devboardd.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/assinmentt-5" },
   ],
 },
