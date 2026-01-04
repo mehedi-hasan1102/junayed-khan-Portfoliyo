@@ -24,7 +24,7 @@ const PortfolioSection = () => {
   category: "Frontend Development",
   views: 780,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/Assingment-1/" },
+    { label: "Live Demo", url: "https://bangladesh02.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/Assingment-1" },
   ],
 },
