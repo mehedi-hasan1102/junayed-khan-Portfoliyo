@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 const Contact = () => {
   return (
@@ -20,16 +21,16 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
           {/* LEFT */}
           <div>
-           <h2
-  className="
+            <h2
+              className="
     text-2xl sm:text-3xl md:text-4xl
     font-bold text-white
     leading-tight mb-6
   "
->
-  Let’s <br />
-  <span className="text-cyan-400 sm:text-3xl md:text-3xl">Build Modern Web Experiences</span>
-</h2>
+            >
+              Let’s <br />
+              <span className="text-cyan-400 sm:text-3xl md:text-3xl">Build Modern Web Experiences</span>
+            </h2>
 
             <div className="space-y-4 text-sm sm:text-base">
               <div className="flex items-center gap-3 text-gray-300">
@@ -47,6 +48,26 @@ const Contact = () => {
               <div className="flex items-center gap-3 text-gray-300">
                 <FaPhoneAlt className="text-cyan-400 text-lg" />
                 <span>01770-718121</span>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <a
+                  href="#"
+                  className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
+                >
+                  <FaFacebook size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
+                >
+                  <FaGithub size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
+                >
+                  <FaLinkedin size={20} />
+                </a>
               </div>
             </div>
           </div>
@@ -124,7 +145,7 @@ const Contact = () => {
                 transition-all
               "
             >
-             Let’s Talk →
+              Let’s Talk →
             </motion.button>
           </motion.form>
         </div>
