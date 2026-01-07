@@ -61,7 +61,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-16 py-4">
 
         {/* Logo */}
-        <Link to="/" className=" federant-bold flex items-center gap-2">
+        <Link to="/" className=" dancing-script flex items-center gap-2">
           <h3 className="text-2xl md:text-4xl font-bold text-cyan-400">
             Junayed <span className="text-white">Khan</span>
           </h3>

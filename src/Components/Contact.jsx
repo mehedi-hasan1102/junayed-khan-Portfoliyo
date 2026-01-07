@@ -35,7 +35,7 @@ const Contact = () => {
               <div className="flex items-center gap-3 text-gray-300">
                 <FaEnvelope className="text-cyan-400 text-lg" />
                 <span className="hover:text-white transition">
-                  junayedkhan@gmail.com
+                  junayedtokhan@gmail.com
                 </span>
               </div>
 
