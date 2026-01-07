@@ -56,7 +56,7 @@ const Services = () => {
           className="text-center mb-12 md:mb-14"
         >
           <p className="text-cyan-400 uppercase tracking-widest text-xs sm:text-sm">
-            Services
+            What I Do
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-2">
             Professional Web Solutions

@@ -62,12 +62,15 @@ const Footer = () => {
 
       </div> */}
 
-      <div className="border-t border-gray-800 mt-10 pt-4 text-center text-cyan-500 text-1xl">
-        © {new Date().getFullYear()} Junayed Khan | All rights reserved.
-      </div>
-      <div className="mt-12 flex justify-center">
+      <div className="mt-4 flex justify-center mb-4">
         <SocialMedia></SocialMedia>
       </div>
+
+      <div className="border-t border-gray-800 mt-10 pt-4 text-center text-cyan-500 text-1xl">
+        
+        © {new Date().getFullYear()} Junayed Khan | All rights reserved.
+      </div>
+      
     </footer>
   );
 };
