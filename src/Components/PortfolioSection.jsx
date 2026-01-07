@@ -14,7 +14,7 @@ const PortfolioSection = () => {
   category: "Web Development",
   views: 501,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/assignment-3--0001/" },
+    { label: "Live Demo", url: "https://petsshopsweb.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/assignment-3--0001" },
   ],
 },
@@ -34,7 +34,7 @@ const PortfolioSection = () => {
   category: "Frontend Development",
   views: 320,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/tea-house-with-tailwind/" },
+    { label: "Live Demo", url: "https://teahouseshop.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/tea-house-with-tailwind" },
   ],
 },
@@ -44,7 +44,7 @@ const PortfolioSection = () => {
   category: "Web Development",
   views: 265,
   links: [
-    { label: "Live Demo", url: "https://junayed-khan24.github.io/kids-school/" },
+    { label: "Live Demo", url: "https://kidsschoolweb.netlify.app/" },
     { label: "GitHub", url: "https://github.com/junayed-khan24/kids-school" },
   ],
 },

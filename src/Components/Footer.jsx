@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
@@ -63,6 +64,9 @@ const Footer = () => {
 
       <div className="border-t border-gray-800 mt-10 pt-4 text-center text-cyan-500 text-1xl">
         © {new Date().getFullYear()} Junayed Khan | All rights reserved.
+      </div>
+      <div className="mt-12 flex justify-center">
+        <SocialMedia></SocialMedia>
       </div>
     </footer>
   );
