@@ -49,24 +49,24 @@ const Contact = () => {
                 <FaPhoneAlt className="text-cyan-400 text-lg" />
                 <span>01770-718121</span>
               </div>
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex items-center gap-4 mt-4">  
                 <a
-                  href="#"
-                  className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
-                >
-                  <FaFacebook size={20} />
-                </a>
-                <a
-                  href="#"
+                  href="https://github.com/junayed-khan24?tab=overview&from=2026-01-01&to=2026-01-07"
                   className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
                 >
                   <FaGithub size={20} />
                 </a>
                 <a
-                  href="#"
+                  href=" https://www.linkedin.com/in/md-junayed-khan-7975692a8/"
                   className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
                 >
                   <FaLinkedin size={20} />
+                </a>
+                 <a
+                  href="https://www.facebook.com/md.junayed.khan.162210"
+                  className="p-2 rounded-full bg-gray-800 hover:bg-cyan-400 transition-colors duration-300"
+                >
+                  <FaFacebook size={20} />
                 </a>
               </div>
             </div>
