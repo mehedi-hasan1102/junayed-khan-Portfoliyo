@@ -62,9 +62,9 @@ const Footer = () => {
 
       </div> */}
 
-      <div className="mt-4 flex justify-center mb-4">
+      {/* <div className="mt-4 flex justify-center mb-4">
         <SocialMedia></SocialMedia>
-      </div>
+      </div> */}
 
       <div className="border-t border-gray-800 mt-10 pt-4 text-center text-cyan-500 text-1xl">
         
