@@ -1,16 +1,69 @@
-# React + Vite
+# Junayed Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built with **React 19**, **Vite**, **Tailwind CSS**, and **Framer Motion**. This project showcases projects, skills, and includes a fully functional contact form powered by **EmailJS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Fast development and builds with Vite
+- Modern UI using Tailwind CSS and DaisyUI
+- Smooth animations with Framer Motion
+- Working contact form using EmailJS (no backend required)
+- Client-side routing with React Router
+- Icons via React Icons and Lucide React
+- Responsive design for all devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend**
+- React 19
+- Vite
+- Tailwind CSS
+- DaisyUI
+- Framer Motion / Motion
+- React Router DOM
+
+**Utilities**
+- EmailJS
+- React Icons
+- Lucide React
+- Lottie React
+- React Scroll
+- React Fast Marquee
+
+**Tooling**
+- ESLint
+- Vite Plugin React
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/junayed-port.git
+cd junayed-port
+npm install
+```
+
+### Environment Variables
+
+This project uses EmailJS for the contact form.
+
+Create a .env file in the project root:
+```
+VITE_EMAILJS_SERVICE_ID=service_xxxxx
+VITE_EMAILJS_TEMPLATE_ID=template_xxxxx
+VITE_EMAILJS_PUBLIC_KEY=public_xxxxx
+```
+
+### Available Scripts
+
+```
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+```
